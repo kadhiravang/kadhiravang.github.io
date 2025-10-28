@@ -1,104 +1,32 @@
-<!DOCTYPE html>
+ <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kadhiravan Gopal | ML & AI Engineer</title>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%- metaTitle %></title>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta property="title" content="<%- metaTitle %>" />
+    <meta name="description" content="<%- metaDescription %>" />
 
-  <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <meta itemprop="name" content="<%- metaTitle %>" />
+    <meta itemprop="description" content="<%- metaDescription %>" />
+    <meta itemprop="image" content="<%- metaImageURL %>" />
 
-  <!-- AOS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta property="og:title" content="<%- metaTitle %>" />
+    <meta property="og:description" content="<%- metaDescription %>" />
+    <meta property="og:image" content="<%- metaImageURL %>" />
+    <meta property="og:image:secure_url" content="<%- metaImageURL %>" />
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Kadhiravan Gopal</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero -->
-  <section id="hero" class="d-flex align-items-center justify-content-center text-center">
-    <div>
-      <h1>Hello, I'm <span class="text-primary">Kadhiravan Gopal</span></h1>
-      <h3><span class="typed" data-typed-items="Software Engineer, ML & AI Developer, Computer Vision Enthusiast"></span></h3>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="container py-5">
-    <h2 class="text-center mb-4">About Me</h2>
-    <p class="lead text-center">
-      I’m a software developer passionate about Machine Learning and Computer Vision. 
-      I’ve built projects like <strong>PlantPal</strong> and background estimation systems using PyTorch and OpenCV.
-    </p>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="bg-light py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Skills</h2>
-      <div class="row text-center">
-        <div class="col-md-3"><i class="fab fa-python fa-3x mb-2"></i><p>Python</p></div>
-        <div class="col-md-3"><i class="fab fa-android fa-3x mb-2"></i><p>Kotlin / Android</p></div>
-        <div class="col-md-3"><i class="fa-solid fa-brain fa-3x mb-2"></i><p>PyTorch / DL</p></div>
-        <div class="col-md-3"><i class="fa-solid fa-database fa-3x mb-2"></i><p>SQL / DB Design</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="container py-5">
-    <h2 class="text-center mb-4">Projects</h2>
-    <div class="row">
-      <div class="col-md-4 mb-4" data-aos="fade-up">
-        <div class="card">
-          <img src="images/plantpal.png" class="card-img-top" alt="PlantPal">
-          <div class="card-body">
-            <h5 class="card-title">PlantPal</h5>
-            <p class="card-text">AI-driven houseplant recommender & health monitor built using Streamlit and PyTorch.</p>
-            <a href="https://github.com/kadhiravangopal/plantpal" class="btn btn-primary">View on GitHub</a>
-          </div>
-        </div>
-      </div>
-      <!-- Add more projects here -->
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="bg-dark text-white py-5 text-center">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:kadhiravan@example.com" class="text-white">kadhiravan@example.com</a></p>
-    <div>
-      <a href="https://github.com/kadhiravangopal" class="text-white me-3"><i class="fab fa-github fa-2x"></i></a>
-      <a href="https://linkedin.com/in/kadhiravangopal" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a>
-    </div>
-  </section>
-
-  <!-- JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/main.js"></script>
-</body>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="<%- metaTitle %>" />
+    <meta name="twitter:description" content="<%- metaDescription %>" />
+    <meta name="twitter:image" content="<%- metaImageURL %>" />
+    <%- googleAnalyticsScript %>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
