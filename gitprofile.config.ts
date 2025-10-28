@@ -29,35 +29,42 @@ const CONFIG = {
       header: 'Featured Projects',
       // Re-populated with your highly detailed, improved project list
       projects: [
-        {
-          title: 'PlantPal: AI-Driven Plant Health App 🌿',
-          description:
-            'An AI-driven houseplant recommender and health monitoring app built using PyTorch, Streamlit, and OpenCV. It analyzes plant images to assess health, diagnose issues, and recommend tailored care schedules.',
-          imageUrl: '/plantpal.png',
-          link: 'https://github.com/kadhiravang/PlantPal',
-        },
-        {
-          title: 'Deep Learning-Enhanced CCTV System 🧠📹',
-          description:
-            'A smart surveillance enhancement system integrating facial recognition, number plate detection, animal/ball tracking, and event data logging, all built with OpenCV and deep learning.',
-          imageUrl: 'cctv.png',
-          link: 'https://github.com/kadhiravang/CCTV-ML-Enhancement',
-        },
-        {
-          title: 'ViT-VGG16 Hybrid Architecture (PyTorch) 🔬',
-          description:
-            'A novel hybrid architecture combining Vision Transformer (ViT) and VGG16 for improved image classification accuracy and efficient feature extraction, implemented entirely in PyTorch.',
-          imageUrl: 'vitvgg.png',
-          link: 'https://github.com/kadhiravang/ViT-Hybrid-VGG16',
-        },
-        {
-          title: 'RL-Trained Self-Parking Car (Unity ML-Agents) 🚗',
-          description:
-            'A reinforcement learning (RL) project built in Unity using the ML-Agents toolkit to train an autonomous self-parking car with obstacle detection and environment feedback.',
-          imageUrl: 'selfparking.png',
-          link: 'https://lnkd.in/g8jgqWDR',
-        },
-      ],
+  {
+    title: 'PlantPal: AI-Driven Plant Health App 🌿',
+    description:
+      'An AI-driven houseplant recommender and health monitoring app built using PyTorch, Streamlit, and OpenCV. It analyzes plant images to assess health, diagnose issues, and recommend tailored care schedules.',
+    imageUrl: 'plantpal.png',
+    link: 'https://github.com/kadhiravang/PlantPal',
+  },
+  {
+    title: 'Deep Learning-Enhanced CCTV System 🧠📹',
+    description:
+      'A smart surveillance enhancement system integrating facial recognition, number plate detection, animal/ball tracking, and event data logging, all built with OpenCV and deep learning.',
+    imageUrl: 'cctv.png',
+    link: 'https://github.com/kadhiravang/CCTV-ML-Enhancement',
+  },
+  // {
+  //   title: 'ViT-VGG16 Hybrid Architecture (PyTorch) 🔬',
+  //   description:
+  //     'A novel hybrid architecture combining Vision Transformer (ViT) and VGG16 for improved image classification accuracy and efficient feature extraction, implemented entirely in PyTorch.',
+  //   imageUrl: 'vitvgg.png',
+  //   link: 'https://github.com/kadhiravang/ViT-Hybrid-VGG16',
+  // },
+  {
+    title: 'RL-Trained Self-Parking Car (Unity ML-Agents) 🚗',
+    description:
+      'A reinforcement learning (RL) project built in Unity using the ML-Agents toolkit to train an autonomous self-parking car with obstacle detection and environment feedback.',
+    imageUrl: 'selfparking.png',
+    link: 'https://lnkd.in/g8jgqWDR',
+  },
+  {
+    title: 'Real Estate Management App 🏠💼',
+    description:
+      'A full-stack real estate management system developed using Streamlit and PostgreSQL. Supports property listings, agent–renter interaction, bookings, and payments — designed to demonstrate practical relational database applications in real estate.',
+    imageUrl: 'realestate.png',
+    link: 'https://github.com/kadhiravang/RealEstate-DB-App',
+  },
+],
     },
   },
   seo: { 
