@@ -33,28 +33,28 @@ const CONFIG = {
           title: 'PlantPal: AI-Driven Plant Health App 🌿',
           description:
             'An AI-driven houseplant recommender and health monitoring app built using PyTorch, Streamlit, and OpenCV. It analyzes plant images to assess health, diagnose issues, and recommend tailored care schedules.',
-          imageUrl: '/public/plantpal.png',
+          imageUrl: '/plantpal.png',
           link: 'https://github.com/kadhiravang/PlantPal',
         },
         {
           title: 'Deep Learning-Enhanced CCTV System 🧠📹',
           description:
             'A smart surveillance enhancement system integrating facial recognition, number plate detection, animal/ball tracking, and event data logging, all built with OpenCV and deep learning.',
-          imageUrl: '/public/cctv.png',
+          imageUrl: '/cctv.png',
           link: 'https://github.com/kadhiravang/CCTV-ML-Enhancement',
         },
         {
           title: 'ViT-VGG16 Hybrid Architecture (PyTorch) 🔬',
           description:
             'A novel hybrid architecture combining Vision Transformer (ViT) and VGG16 for improved image classification accuracy and efficient feature extraction, implemented entirely in PyTorch.',
-          imageUrl: '/public/vitvgg.png',
+          imageUrl: '/vitvgg.png',
           link: 'https://github.com/kadhiravang/ViT-Hybrid-VGG16',
         },
         {
           title: 'RL-Trained Self-Parking Car (Unity ML-Agents) 🚗',
           description:
             'A reinforcement learning (RL) project built in Unity using the ML-Agents toolkit to train an autonomous self-parking car with obstacle detection and environment feedback.',
-          imageUrl: '/public/selfparking.png',
+          imageUrl: '/selfparking.png',
           link: 'https://lnkd.in/g8jgqWDR',
         },
       ],
