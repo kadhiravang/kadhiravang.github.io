@@ -36,8 +36,8 @@ The site reads your public repos from the GitHub API on each visit.
 ## Regenerate the résumé PDF
 
 ```bash
-chromium --headless --no-sandbox --no-pdf-header-footer \
+chromium --headless --no-sandbox --no-pdf-header-footer --virtual-time-budget=15000 \
   --print-to-pdf=public/Kadhiravan_Gopal_Resume.pdf resume/resume.html
 ```
 
-It should stay one page.
+Needs internet (the résumé loads Fraunces, Inter and JetBrains Mono from Google Fonts). It should stay one page: check with `pdfinfo public/Kadhiravan_Gopal_Resume.pdf | grep Pages`.

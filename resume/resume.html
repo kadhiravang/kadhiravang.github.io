@@ -3,60 +3,101 @@
 <head>
 <meta charset="utf-8" />
 <title>Kadhiravan Gopal – Resume</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <style>
-  @page { size: Letter; margin: 0.36in 0.5in; }
+  :root {
+    --ink: #14141f;
+    --body: #2a2a38;
+    --muted: #5a5a6e;
+    --rule: #dcdce6;
+    --accent: #5b21b6;
+    --accent-2: #0e7490;
+  }
+  @page { size: Letter; margin: 0; }
   * { box-sizing: border-box; }
-  body { font-family: 'Liberation Sans', Arial, Helvetica, sans-serif; font-size: 9pt; line-height: 1.26; color: #111; margin: 0; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { font-family: 'Inter', 'Liberation Sans', Arial, sans-serif; font-size: 8.5pt; line-height: 1.31; color: var(--body); margin: 0; }
   a { color: inherit; text-decoration: none; }
-  h1 { font-size: 19pt; margin: 0 0 1pt; letter-spacing: 0.2pt; }
-  .contact { font-size: 8.8pt; color: #333; margin-bottom: 2pt; }
-  .contact span + span::before { content: "  |  "; color: #888; }
-  h2 { font-size: 9.2pt; letter-spacing: 1pt; text-transform: uppercase; margin: 5.5pt 0 2pt; padding-bottom: 1pt; border-bottom: 1px solid #444; }
-  .row { display: flex; justify-content: space-between; gap: 12pt; }
-  .row .l { font-weight: 700; }
-  .row .r { white-space: nowrap; color: #333; }
-  .sub { font-style: italic; color: #333; margin: 0 0 1.5pt; }
-  ul { margin: 1.5pt 0 2.5pt; padding-left: 12pt; }
-  li { margin: 0 0 1.3pt; }
-  p { margin: 0 0 1.8pt; }
-  .skills p { margin: 0 0 1.4pt; }
-  .proj { margin-bottom: 2pt; }
+  strong { color: var(--ink); font-weight: 600; }
+
+  .bar { height: 7pt; background: linear-gradient(90deg, #7c3aed, #0891b2); }
+  .page { padding: 0.22in 0.5in 0.1in; }
+
+  header { margin-bottom: 4pt; }
+  h1 { font-family: 'Fraunces', Georgia, serif; font-size: 25pt; line-height: 1.05; letter-spacing: -0.4pt; margin: 0; color: var(--ink); }
+  .role { font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 11pt; color: var(--accent); margin: 2pt 0 4pt; }
+  .contact { font-size: 7.6pt; color: var(--muted); white-space: nowrap; }
+  .contact span + span::before { content: "•"; color: #b7b7c8; margin: 0 4pt; }
+  .contact a { color: var(--accent-2); font-weight: 500; }
+
+  h2 { display: flex; align-items: center; gap: 8pt; font-family: 'Fraunces', Georgia, serif; font-size: 9.3pt; font-weight: 700; letter-spacing: 1.3pt; text-transform: uppercase; color: var(--accent); margin: 5.5pt 0 2.5pt; }
+  h2::after { content: ""; flex: 1; height: 1px; background: var(--rule); }
+
+  .row { display: flex; justify-content: space-between; align-items: baseline; gap: 12pt; }
+  .l { font-weight: 600; color: var(--ink); }
+  .l em { font-style: normal; font-weight: 600; color: var(--accent-2); }
+  .r { white-space: nowrap; color: var(--muted); font-size: 8.3pt; }
+  .sub { color: var(--muted); margin: 0 0 1.5pt; }
+
+  ul { margin: 2pt 0 3.5pt; padding-left: 11pt; }
+  li { margin: 0 0 1.4pt; padding-left: 1pt; }
+  li::marker { color: var(--accent); font-size: 8pt; }
+  p { margin: 0 0 2pt; }
+
+  .proj { margin-bottom: 2.4pt; }
+  .proj p { margin: 1pt 0 0; }
+
+  .skills p { margin: 0 0 1.7pt; }
+  .skills b { color: var(--accent); font-weight: 600; }
+
+  /* Type system: Fraunces (name, subtitle), Inter (body), JetBrains Mono (labels, dates) */
+  h1 { font-weight: 600; letter-spacing: -0.6pt; font-size: 26pt; }
+  .role { font-weight: 500; font-size: 11.5pt; }
+  h2 { font-family: 'JetBrains Mono', ui-monospace, monospace; font-weight: 500; letter-spacing: 1.6pt; font-size: 8.3pt; }
+  .r { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 7.8pt; }
 </style>
 </head>
 <body>
+<div class="bar"></div>
+<div class="page">
 
-<h1>Kadhiravan Gopal</h1>
-<div class="contact">
-  <span>Chicago, IL</span><span>(312) 730-8530</span><span>iitzkadhiravan@gmail.com</span><span>linkedin.com/in/kadhiravang</span><span>github.com/kadhiravang</span><span>kadhiravang.github.io</span>
-</div>
+<header>
+  <h1>Kadhiravan Gopal</h1>
+  <div class="role">AI/ML &amp; Full-Stack Software Engineer</div>
+  <div class="contact">
+    <span>Chicago, IL</span><span>(312) 730-8530</span><span><a href="mailto:iitzkadhiravan@gmail.com">iitzkadhiravan@gmail.com</a></span><span><a href="https://www.linkedin.com/in/kadhiravang">linkedin.com/in/kadhiravang</a></span><span><a href="https://github.com/kadhiravang">github.com/kadhiravang</a></span><span><a href="https://kadhiravang.github.io">kadhiravang.github.io</a></span>
+  </div>
+</header>
 
 <h2>Summary</h2>
-<p>AI/ML and full-stack software engineer with 2 years in LTIMindtree's Generative AI Center of Excellence, working on 8+ full-stack applications (Python backend, Angular UI) and responsible for them from development through deployment and production support. Hands-on with LLMs (GPT-4o, Claude, Mistral, Amazon Bedrock, Azure OpenAI), RAG, multi-agent systems, vector stores, and evaluation. MS in Artificial Intelligence at Illinois Institute of Technology (GPA 3.77/4.0, graduating Dec 2026); seeking full-time AI/ML engineering roles.</p>
+<p>AI/ML and full-stack software engineer with <strong>2 years</strong> in LTIMindtree's Generative AI Center of Excellence, working on <strong>8+ full-stack applications</strong> (Python backend, Angular UI) and responsible for them from development through deployment and production support. Hands-on with LLMs (GPT-4o, Claude, Bedrock, Azure OpenAI), RAG, multi-agent systems, vector stores, and evaluation. MS in Artificial Intelligence at Illinois Institute of Technology (graduating Dec 2026); seeking <strong>full-time AI/ML engineering roles</strong>.</p>
 
 <h2>Work Experience</h2>
-<div class="row"><span class="l">Software Engineer, Generative AI Center of Excellence — LTIMindtree</span><span class="r">Jul 2022 – Jul 2024</span></div>
+<div class="row"><span class="l">Software Engineer, Generative AI Center of Excellence · <em>LTIMindtree</em></span><span class="r">Jul 2022 – Jul 2024</span></div>
 <ul>
-  <li>Worked on 8+ full-stack applications (Python backends, Angular UIs); trusted to start projects from scratch, and responsible for development, debugging, deployment, and live production support.</li>
-  <li>Primary developer of an AI-assisted property insurance underwriting assistant, built from scratch with a small agile team. It accepted audio, video, PDF, Word, presentation, and image inputs; I wrote the multi-agent architecture (manual orchestration, before LangGraph and native function calling existed) that identified each file, processed files in parallel, and produced a property estimate, cutting per-property underwriting from 1–1.5 months of manual work to minutes.</li>
-  <li>Raised RAG accuracy from 70% to 95% on our test cases by researching and implementing LLM-based chunk re-ranking.</li>
+  <li>Trusted to start projects from scratch; responsible for development, debugging, deployment, and live production support across <strong>8+ full-stack applications</strong> (Python backends, Angular UIs).</li>
+  <li>Primary developer of an AI-assisted <strong>property insurance underwriting assistant</strong>, built from scratch with a small agile team. It accepted audio, video, PDF, Word, presentation, and image inputs; I wrote the <strong>multi-agent architecture</strong> (manual orchestration, before LangGraph and native function calling existed) that identified each file, processed files in parallel, and produced a property estimate, cutting per-property underwriting from <strong>1–1.5 months of manual work to minutes</strong>.</li>
+  <li>Raised RAG accuracy from <strong>70% to 95%</strong> on our test cases by researching and implementing LLM-based chunk re-ranking.</li>
   <li>Stack: Angular, Flask REST APIs, MongoDB, Qdrant, LlamaIndex, LangChain; evaluated GPT-4o, Claude, Mistral, and others. Deployed GPT-4, GPT-4o, and GPT-3.5 Turbo on Azure OpenAI (Key Vault, AI Search, Functions, Document Intelligence) and apps on Azure App Service and AWS.</li>
-  <li>On a client project limited to one Azure OpenAI deployment, negotiated a realistic target (8+ simultaneous users, 1–2 minute responses) and built a “canvas” layer that screened malicious or violent requests, tracked requests and tokens per user for usage and pricing, and queued requests to stay within model limits.</li>
-  <li>Fixed live production issues (including night incidents); ran knowledge-transfer sessions; presented a handwriting assistant and other apps at IgnAIte and internal demos.</li>
+  <li>On a client project limited to one Azure OpenAI deployment, negotiated a realistic target (8+ simultaneous users, 1–2 minute responses) and built a “canvas” layer that screened malicious or violent requests, tracked requests and tokens per user for usage and pricing, and queued requests within model limits.</li>
+  <li>Fixed live production issues (including night incidents); ran knowledge-transfer sessions; presented a handwriting assistant and other apps at IgnAIte.</li>
 </ul>
-<div class="row"><span class="l">Student Assistant, CPS Testing Project — Illinois Institute of Technology</span><span class="r">Oct 2025 – Present</span></div>
+<div class="row"><span class="l">Student Assistant, CPS Testing Project · <em>Illinois Institute of Technology</em></span><span class="r">Oct 2025 – Present</span></div>
 <ul>
   <li>Rotate across admin, check-in, and proctoring roles; as admin, collect student and session data, enter it into the testing software, and track it across multi-campus teams.</li>
 </ul>
 
 <h2>Projects</h2>
-<div class="proj"><div class="row"><span class="l">HaloCheck — LLM Evaluation &amp; Hallucination Detection (private academic project)</span><span class="r">2026</span></div>
-  <p>Evaluation harness for LLM-generated clinical summaries using a DeBERTa cross-encoder NLI, scispaCy, medspaCy, and NegEx for entity extraction, negation detection, and severity-weighted factual-fidelity scoring, with regression tracking. Outperformed a published baseline (HHEM): F1 0.64, Recall 0.83, OOD F1 0.93.</p></div>
-<div class="proj"><div class="row"><span class="l">Agentic RAG Bot — LangGraph, FastAPI, Qdrant, React</span><span class="r">2026</span></div>
+<div class="proj"><div class="row"><span class="l">HaloCheck · <em>LLM Evaluation &amp; Hallucination Detection</em> (private academic project)</span><span class="r">2026</span></div>
+  <p>Evaluation harness for LLM-generated clinical summaries using a DeBERTa cross-encoder NLI, scispaCy, medspaCy, and NegEx for entity extraction, negation detection, and severity-weighted factual-fidelity scoring, with regression tracking. Outperformed a published baseline (HHEM): <strong>F1 0.64, Recall 0.83, OOD F1 0.93</strong>.</p></div>
+<div class="proj"><div class="row"><span class="l">Agentic RAG Bot · <em>LangGraph, FastAPI, Qdrant, React</em></span><span class="r">2026</span></div>
   <p>Session-isolated RAG over PDFs: a LangGraph agent rewrites, retrieves, grades, and retries; every claim is cited to document, timestamp, and page, and uncovered questions return “not covered” instead of a guess.</p></div>
-<div class="proj"><div class="row"><span class="l">FitnessKitchen — AI Nutrition Tracker (Android, Kotlin, Jetpack Compose)</span><span class="r">2026</span></div>
-  <p>Built end to end: logs meals from natural-language text or voice, using Gemini function-calling to ground each entry in USDA nutrition data.</p></div>
-<div class="proj"><div class="row"><span class="l">Mini-CLIP and Mini-DiT — Paper Reimplementations in PyTorch (coursework)</span><span class="r">2025–2026</span></div>
-  <p>Reimplemented CLIP (custom training loop, contrastive loss, zero-shot evaluation, bias/fairness analysis; ~72% top-1 on mini-scale ImageNet) and the Diffusion Transformer paper (ICCV 2023) across MNIST, BDD100K, and CIFAR-10.</p></div>
+<div class="proj"><div class="row"><span class="l">FitnessKitchen · <em>AI Nutrition Tracker (Android, Kotlin, Jetpack Compose)</em></span><span class="r">2026</span></div>
+  <p>Built end to end: logs meals from text or voice, using Gemini function-calling to ground each entry in USDA nutrition data.</p></div>
+<div class="proj"><div class="row"><span class="l">Mini-CLIP and Mini-DiT · <em>Paper Reimplementations in PyTorch</em> (coursework)</span><span class="r">2025–2026</span></div>
+  <p>Reimplemented CLIP (custom training loop, contrastive loss, zero-shot evaluation, bias/fairness analysis; <strong>~72% top-1</strong> on mini-scale ImageNet) and the Diffusion Transformer paper (ICCV 2023) across MNIST, BDD100K, and CIFAR-10.</p></div>
 
 <h2>Technical Skills</h2>
 <div class="skills">
@@ -67,12 +108,13 @@
 </div>
 
 <h2>Education</h2>
-<div class="row"><span class="l">M.S., Artificial Intelligence — Illinois Institute of Technology, Chicago, IL</span><span class="r">Jan 2025 – Dec 2026</span></div>
+<div class="row"><span class="l">M.S., Artificial Intelligence · <em>Illinois Institute of Technology, Chicago, IL</em></span><span class="r">Jan 2025 – Dec 2026</span></div>
 <p class="sub">GPA 3.77/4.0 · Machine Learning, Deep Learning, NLP, Medical Informatics &amp; AI, Computer Vision, Algorithms, Databases</p>
-<div class="row"><span class="l">B.E., Computer Science — Panimalar Engineering College (Anna University) · GPA 8.72/10</span><span class="r">2018 – Jun 2022</span></div>
+<div class="row"><span class="l">B.E., Computer Science · <em>Panimalar Engineering College (Anna University)</em> · GPA 8.72/10</span><span class="r">2018 – Jun 2022</span></div>
 
 <h2>Certifications</h2>
 <p>Oracle SQL Certified Associate · AWS Partner Accreditations (Technical, Cloud Economics, Sales) · CITI Biomedical Research</p>
 
+</div>
 </body>
 </html>
