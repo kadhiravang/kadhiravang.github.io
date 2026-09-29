@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Kadhiravan Gopal – Resume</title>
+<style>
+  @page { size: Letter; margin: 0.36in 0.5in; }
+  * { box-sizing: border-box; }
+  body { font-family: 'Liberation Sans', Arial, Helvetica, sans-serif; font-size: 9pt; line-height: 1.26; color: #111; margin: 0; }
+  a { color: inherit; text-decoration: none; }
+  h1 { font-size: 19pt; margin: 0 0 1pt; letter-spacing: 0.2pt; }
+  .contact { font-size: 8.8pt; color: #333; margin-bottom: 2pt; }
+  .contact span + span::before { content: "  |  "; color: #888; }
+  h2 { font-size: 9.2pt; letter-spacing: 1pt; text-transform: uppercase; margin: 5.5pt 0 2pt; padding-bottom: 1pt; border-bottom: 1px solid #444; }
+  .row { display: flex; justify-content: space-between; gap: 12pt; }
+  .row .l { font-weight: 700; }
+  .row .r { white-space: nowrap; color: #333; }
+  .sub { font-style: italic; color: #333; margin: 0 0 1.5pt; }
+  ul { margin: 1.5pt 0 2.5pt; padding-left: 12pt; }
+  li { margin: 0 0 1.3pt; }
+  p { margin: 0 0 1.8pt; }
+  .skills p { margin: 0 0 1.4pt; }
+  .proj { margin-bottom: 2pt; }
+</style>
+</head>
+<body>
+
+<h1>Kadhiravan Gopal</h1>
+<div class="contact">
+  <span>Chicago, IL</span><span>(312) 730-8530</span><span>iitzkadhiravan@gmail.com</span><span>linkedin.com/in/kadhiravang</span><span>github.com/kadhiravang</span><span>kadhiravang.github.io</span>
+</div>
+
+<h2>Summary</h2>
+<p>AI/ML and full-stack software engineer with 2 years in LTIMindtree's Generative AI Center of Excellence, working on 8+ full-stack applications (Python backend, Angular UI) and responsible for them from development through deployment and production support. Hands-on with LLMs (GPT-4o, Claude, Mistral, Amazon Bedrock, Azure OpenAI), RAG, multi-agent systems, vector stores, and evaluation. MS in Artificial Intelligence at Illinois Institute of Technology (GPA 3.77/4.0, graduating Dec 2026); seeking full-time AI/ML engineering roles.</p>
+
+<h2>Work Experience</h2>
+<div class="row"><span class="l">Software Engineer, Generative AI Center of Excellence — LTIMindtree</span><span class="r">Jul 2022 – Jul 2024</span></div>
+<ul>
+  <li>Worked on 8+ full-stack applications (Python backends, Angular UIs); trusted to start projects from scratch, and responsible for development, debugging, deployment, and live production support.</li>
+  <li>Primary developer of an AI-assisted property insurance underwriting assistant, built from scratch with a small agile team. It accepted audio, video, PDF, Word, presentation, and image inputs; I wrote the multi-agent architecture (manual orchestration, before LangGraph and native function calling existed) that identified each file, processed files in parallel, and produced a property estimate, cutting per-property underwriting from 1–1.5 months of manual work to minutes.</li>
+  <li>Raised RAG accuracy from 70% to 95% on our test cases by researching and implementing LLM-based chunk re-ranking.</li>
+  <li>Stack: Angular, Flask REST APIs, MongoDB, Qdrant, LlamaIndex, LangChain; evaluated GPT-4o, Claude, Mistral, and others. Deployed GPT-4, GPT-4o, and GPT-3.5 Turbo on Azure OpenAI (Key Vault, AI Search, Functions, Document Intelligence) and apps on Azure App Service and AWS.</li>
+  <li>On a client project limited to one Azure OpenAI deployment, negotiated a realistic target (8+ simultaneous users, 1–2 minute responses) and built a “canvas” layer that screened malicious or violent requests, tracked requests and tokens per user for usage and pricing, and queued requests to stay within model limits.</li>
+  <li>Fixed live production issues (including night incidents); ran knowledge-transfer sessions; presented a handwriting assistant and other apps at IgnAIte and internal demos.</li>
+</ul>
+<div class="row"><span class="l">Student Assistant, CPS Testing Project — Illinois Institute of Technology</span><span class="r">Oct 2025 – Present</span></div>
+<ul>
+  <li>Rotate across admin, check-in, and proctoring roles; as admin, collect student and session data, enter it into the testing software, and track it across multi-campus teams.</li>
+</ul>
+
+<h2>Projects</h2>
+<div class="proj"><div class="row"><span class="l">HaloCheck — LLM Evaluation &amp; Hallucination Detection (private academic project)</span><span class="r">2026</span></div>
+  <p>Evaluation harness for LLM-generated clinical summaries using a DeBERTa cross-encoder NLI, scispaCy, medspaCy, and NegEx for entity extraction, negation detection, and severity-weighted factual-fidelity scoring, with regression tracking. Outperformed a published baseline (HHEM): F1 0.64, Recall 0.83, OOD F1 0.93.</p></div>
+<div class="proj"><div class="row"><span class="l">Agentic RAG Bot — LangGraph, FastAPI, Qdrant, React</span><span class="r">2026</span></div>
+  <p>Session-isolated RAG over PDFs: a LangGraph agent rewrites, retrieves, grades, and retries; every claim is cited to document, timestamp, and page, and uncovered questions return “not covered” instead of a guess.</p></div>
+<div class="proj"><div class="row"><span class="l">FitnessKitchen — AI Nutrition Tracker (Android, Kotlin, Jetpack Compose)</span><span class="r">2026</span></div>
+  <p>Built end to end: logs meals from natural-language text or voice, using Gemini function-calling to ground each entry in USDA nutrition data.</p></div>
+<div class="proj"><div class="row"><span class="l">Mini-CLIP and Mini-DiT — Paper Reimplementations in PyTorch (coursework)</span><span class="r">2025–2026</span></div>
+  <p>Reimplemented CLIP (custom training loop, contrastive loss, zero-shot evaluation, bias/fairness analysis; ~72% top-1 on mini-scale ImageNet) and the Diffusion Transformer paper (ICCV 2023) across MNIST, BDD100K, and CIFAR-10.</p></div>
+
+<h2>Technical Skills</h2>
+<div class="skills">
+  <p><b>LLMs &amp; Agentic AI:</b> GPT-4o, Claude, Mistral, Amazon Bedrock, Azure OpenAI, Gemini, LangChain, LlamaIndex, LangGraph, RAG, LLM re-ranking, multi-agent orchestration, function calling, prompt engineering, LLM evaluation</p>
+  <p><b>ML &amp; Deep Learning:</b> PyTorch, TensorFlow, scikit-learn, Transformers, CNNs, diffusion models, computer vision, DeBERTa, scispaCy, medspaCy</p>
+  <p><b>Engineering:</b> Python (Flask, FastAPI), REST APIs, SQL, Angular, React, Kotlin, Jetpack Compose · PostgreSQL, Oracle, MongoDB, Qdrant, Neo4j (prototype)</p>
+  <p><b>Cloud &amp; DevOps:</b> Azure (OpenAI, App Service, Key Vault, AI Search, Functions, Document Intelligence), AWS (Bedrock, ECS, EC2, S3), Docker, CI/CD, Git</p>
+</div>
+
+<h2>Education</h2>
+<div class="row"><span class="l">M.S., Artificial Intelligence — Illinois Institute of Technology, Chicago, IL</span><span class="r">Jan 2025 – Dec 2026</span></div>
+<p class="sub">GPA 3.77/4.0 · Machine Learning, Deep Learning, NLP, Medical Informatics &amp; AI, Computer Vision, Algorithms, Databases</p>
+<div class="row"><span class="l">B.E., Computer Science — Panimalar Engineering College (Anna University) · GPA 8.72/10</span><span class="r">2018 – Jun 2022</span></div>
+
+<h2>Certifications</h2>
+<p>Oracle SQL Certified Associate · AWS Partner Accreditations (Technical, Cloud Economics, Sales) · CITI Biomedical Research</p>
+
+</body>
+</html>
